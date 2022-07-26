@@ -18,7 +18,7 @@ const Navbar = ({ selectedHowl, playing, setPlaying }) => {
   };
 
   return (
-    <div className="bg-[#1B2430] w-full p-4 flex items-center justify-between">
+    <div className="bg-[#0B111F] shadow-2xl w-full p-4 flex items-center justify-between">
       <div className="flex items-center">
         <BsMusicPlayerFill className="text-textLight" size="30px" />
         <h1 className="text-textLight ml-2 font-bold text-2xl">Music Mazza</h1>
@@ -29,11 +29,11 @@ const Navbar = ({ selectedHowl, playing, setPlaying }) => {
           max="100"
           onChange={handleVolumeChange}
           defaultValue="100"
-          class="w-full h-2 bg-green-200 rounded-lg appearance-none cursor-pointer dark:bg-green-700"
+          className="w-full h-2 bg-green-600 rounded-lg appearance-none cursor-pointer dark:bg-green-600"
         ></input>
         <button
           onClick={togglePlay}
-          className="text-textLight bg-green-700 p-2 rounded-full ml-4"
+          className="text-textLight bg-green-600 p-2 rounded-full ml-4 hover:scale-95"
         >
           {playing ? <BsPauseFill size="24px" /> : <BsPlayFill size="24px" />}
         </button>

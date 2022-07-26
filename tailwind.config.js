@@ -12,7 +12,7 @@ module.exports = {
         hover: "#313131",
       },
       gridTemplateColumns: {
-        player: "85px repeat(10, minmax(0, 1fr)) 85px;",
+        player: "85px repeat(10, minmax(0, 1fr)) 50px;",
       },
     },
   },
